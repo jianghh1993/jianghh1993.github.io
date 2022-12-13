@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Keep Team">
+    
+    <title>
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/fontawesome/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"cn"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066cc","logo":"/images/logo.svg","favicon":"/images/logo.svg","avatar":"/images/avatar.svg","font_size":null,"font_family":null,"hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"header_transparent":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving.","font_color":null,"hitokoto":false},"scroll":{"progress_bar":false,"percent":false}},"local_search":{"enable":false,"preload":false},"code_copy":{},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":false,"version":2}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"enable":false,"wordcount":false,"min2read":false},"img_align":"left","copyright_info":false},"version":"3.5.2"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"};
+  </script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               Keep Theme
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation"></span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">Keep Team</span>
+                            
+                                <span class="author-label">Lv3</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2022-12-13 21:47:27</span>
+        <span class="mobile">2022-12-13 21:47</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2022-10-24 21:17:50</span>
+    </span>
+    
+    
+    
+
+    
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                <h2 id="Stream-API"><a href="#Stream-API" class="headerlink" title="Stream API"></a>Stream API</h2><p>参考链接：<a class="link"   target="_blank" rel="noopener" href="https://www.cnblogs.com/CNLayton/p/15941217.html" >https://www.cnblogs.com/CNLayton/p/15941217.html<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="一、Stream-简述"><a href="#一、Stream-简述" class="headerlink" title="一、Stream 简述"></a>一、Stream 简述</h2><p>JDK1.8开始，引入了一个全新的流式Stream API，它位于**<code>java.util.stream</code>**包中，StreamAPI用于帮我们更方便地操作集合，他的本质就是对数据的操作进行流水线式处理，也可以理解为一个更加高级的迭代器，主要的作用便是遍历其中每一个元素。</p>
+<h2 id="二、Stream的特点"><a href="#二、Stream的特点" class="headerlink" title="二、Stream的特点"></a>二、Stream的特点</h2><p>　　和list等容器不同，Stream代表的是任意Java对象的序列，且stream输出的元素可能并没有预先存储在内存中，而是实时计算出来的。它可以“存储”有限个或无限个元素。</p>
+<p>　　例如我们要表示一个全体自然数的集合，用List是不可能写出来的，因为自然数是无限的，内存再大也没法放到List中，但我们可以用stream做到</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;BigInteger&gt; naturals = createNaturalStream(); <span class="comment">// 全体自然数</span></span><br></pre></td></tr></table></figure>
+
+<p>　　我们不考虑这个方法是如何实现的，我们只需关心现在这些自然数没有实时存在内存里，我们可以对这个自然数流进行平方、加减等操作，等我们需要部分有限的数据时，再通过API获得，也就是说真正的计算发生在流的最后。、</p>
+<p><a target="_blank" rel="noopener" href="https://img2022.cnblogs.com/blog/1614317/202202/1614317-20220226230020467-1967488392.png"><img src="https://img2022.cnblogs.com/blog/1614317/202202/1614317-20220226230020467-1967488392.png" alt="img"></a></p>
+<h2 id="三、创建Stream"><a href="#三、创建Stream" class="headerlink" title="三、创建Stream"></a>三、创建Stream</h2><h3 id="Stream-of"><a href="#Stream-of" class="headerlink" title="Stream.of"></a>Stream.of</h3><p>　　Stream.of静态方法可以直接手动生成一个stream</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;String&gt; stream = Stream.of(<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>　　很简单，不过也没什么实际用途</p>
+<h3 id="基于数组或Collection"><a href="#基于数组或Collection" class="headerlink" title="基于数组或Collection"></a>基于数组或Collection</h3><p>　　把数组变成stream使用Arrays.stream()方法。对于Collection（List、Set、Queue等)，直接调用stream()方法就可以获得stream。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;String&gt; stream1 = Arrays.stream(<span class="keyword">new</span> <span class="title class_">String</span>[] &#123; <span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span> &#125;);</span><br><span class="line">Stream&lt;String&gt; stream2 = List.of(<span class="string">&quot;X&quot;</span>, <span class="string">&quot;Y&quot;</span>, <span class="string">&quot;Z&quot;</span>).stream();supplier</span><br></pre></td></tr></table></figure>
+
+<h3 id="基于Supplier"><a href="#基于Supplier" class="headerlink" title="基于Supplier"></a>基于Supplier</h3><p>　　基于<code>Supplier</code>创建的<code>Stream</code>会不断调用<code>Supplier.get()</code>方法来不断产生下一个元素，这种<code>Stream</code>保存的不是元素，而是算法，它可以用来表示无限序列。例如我们可以用<code>supplier</code>来创建一个自然数stream</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Stream&lt;Integer&gt; natual = Stream.generate(<span class="keyword">new</span> <span class="title class_">NatualSupplier</span>());<span class="comment">//自然数stream</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">NatualSupplier</span> <span class="keyword">implements</span> <span class="title class_">Supplier</span>&lt;Integer&gt; &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">public</span> Integer <span class="title function_">get</span><span class="params">()</span> &#123;</span><br><span class="line">        n++;</span><br><span class="line">        <span class="keyword">return</span> n;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他方法"><a href="#其他方法" class="headerlink" title="其他方法"></a>其他方法</h3><p>　　我们可以通过一些API提供的接口，直接获得<code>Stream</code></p>
+<p>　　例如<code>Files</code>类的<code>lines()</code>方法可以把一个文件变成一个<code>Stream</code>，每个元素代表文件的一行内容</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;String&gt; lines = Files.lines(Paths.get(<span class="string">&quot;/path/to/file.txt&quot;</span>))</span><br></pre></td></tr></table></figure>
+
+<p>　　正则表达式的<code>Pattern</code>对象有一个<code>splitAsStream()</code>方法，可以直接把一个长字符串分割成<code>Stream</code>序列而不是数组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Pattern</span> <span class="variable">p</span> <span class="operator">=</span> Pattern.compile(<span class="string">&quot;\\s+&quot;</span>);</span><br><span class="line">Stream&lt;String&gt; s = p.splitAsStream(<span class="string">&quot;The quick brown fox jumps over the lazy dog&quot;</span>);</span><br><span class="line">s.forEach(System.out::println);</span><br></pre></td></tr></table></figure>
+
+<h2 id="四、Map映射"><a href="#四、Map映射" class="headerlink" title="四、Map映射"></a>四、Map映射</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　Stream.map()`是`Stream`最常用的一个转换方法，它把一个`Stream`转换为另一个`Stream</span><br></pre></td></tr></table></figure>
+
+<p>　　本质上就是将stream流里的每一个元素进行一个函数映射，如何映射由我们定义</p>
+<p>　　例如我们可以将stream里面的数字做个平方</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;Integer&gt; s = Stream.of(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">Stream&lt;Integer&gt; s2 = s.map(n -&gt; n * n);</span><br></pre></td></tr></table></figure>
+
+<p>　　map方法里面接收的是<code>Function</code>接口对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">Function</span>&lt;T, R&gt; &#123;</span><br><span class="line">    <span class="comment">// 将T类型转换为R:</span></span><br><span class="line">    R <span class="title function_">apply</span><span class="params">(T t)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="五、filter过滤"><a href="#五、filter过滤" class="headerlink" title="五、filter过滤"></a>五、filter过滤</h2><p>　　所谓<code>filter()</code>操作，就是对一个<code>Stream</code>的所有元素一一进行测试，不满足条件的就被“滤掉”了，剩下的满足条件的元素就构成了一个新的<code>Stream</code></p>
+<p>　　注意只有filter里的表达式为真的元素才可以通过这个”滤网”，例如我们可以将1到10的偶数过滤掉</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        IntStream.of(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>，<span class="number">10</span>)</span><br><span class="line">                .filter(n -&gt; n % <span class="number">2</span> != <span class="number">0</span>)</span><br><span class="line">                .forEach(System.out::println);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="六、reduce聚合"><a href="#六、reduce聚合" class="headerlink" title="六、reduce聚合"></a>六、reduce聚合</h2><p><code>　　map()</code>和<code>filter()</code>都是<code>Stream</code>的转换方法，而<code>Stream.reduce()</code>则是<code>Stream</code>的一个聚合方法，它可以把一个<code>Stream</code>的所有元素按照聚合函数聚合成一个结果，例如我们可以将1到9的自然数求和</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.stream.Stream;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> Stream.of(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>).reduce(<span class="number">0</span>, (acc, x) -&gt; acc + x);</span><br><span class="line">        System.out.println(sum); <span class="comment">// 45</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>　　这里的0就是求和的数的初始值，acc代表每一步的求和中间值，写成这样会更好理解</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;Integer&gt; stream = ...</span><br><span class="line"><span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (x : stream) &#123;</span><br><span class="line">    sum = (sum, n) -&gt; sum + x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>　　除了求和我们还可以进行字符串拼接，数字求积等，注意求积时初始值要为1</p>
+<h2 id="七、其他操作"><a href="#七、其他操作" class="headerlink" title="七、其他操作"></a>七、其他操作</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><p>　　对<code>Stream</code>的元素进行排序十分简单，只需调用<code>sorted()</code>方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = List.of(<span class="string">&quot;Orange&quot;</span>, <span class="string">&quot;apple&quot;</span>, <span class="string">&quot;Banana&quot;</span>)</span><br><span class="line">        .stream()</span><br><span class="line">        .sorted()</span><br><span class="line">        .collect(Collectors.toList());</span><br></pre></td></tr></table></figure>
+
+<p>　　 方法要求<code>Stream</code>的每个元素必须实现<code>Comparable</code>接口。如果要自定义排序，传入指定的<code>Comparator</code>即可</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = List.of(<span class="string">&quot;Orange&quot;</span>, <span class="string">&quot;apple&quot;</span>, <span class="string">&quot;Banana&quot;</span>)</span><br><span class="line">    .stream()</span><br><span class="line">    .sorted(String::compareToIgnoreCase)</span><br><span class="line">    .collect(Collectors.toList());</span><br></pre></td></tr></table></figure>
+
+<h3 id="去重"><a href="#去重" class="headerlink" title="去重"></a>去重</h3><p>　　使用distinct</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">List.of(<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;A&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;D&quot;</span>)</span><br><span class="line">    .stream()</span><br><span class="line">    .distinct()</span><br><span class="line">    .collect(Collectors.toList()); <span class="comment">// [A, B, C, D]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="截取"><a href="#截取" class="headerlink" title="截取"></a>截取</h3><p>　　截取操作常用于把一个无限的<code>Stream</code>转换成有限的<code>Stream</code>，<code>skip()</code>用于跳过当前<code>Stream</code>的前N个元素，<code>limit()</code>用于截取当前<code>Stream</code>最多前N个元素</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">List.of(<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>)</span><br><span class="line">    .stream()</span><br><span class="line">    .skip(<span class="number">2</span>) <span class="comment">// 跳过A, B</span></span><br><span class="line">    .limit(<span class="number">3</span>) <span class="comment">// 截取C, D, E</span></span><br><span class="line">    .collect(Collectors.toList()); <span class="comment">// [C, D, E]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>　　将两个<code>Stream</code>合并为一个<code>Stream</code>可以使用<code>Stream</code>的静态方法<code>concat()</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;String&gt; s1 = List.of(<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>).stream();</span><br><span class="line">Stream&lt;String&gt; s2 = List.of(<span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>).stream();</span><br><span class="line"><span class="comment">// 合并:</span></span><br><span class="line">Stream&lt;String&gt; s = Stream.concat(s1, s2);</span><br><span class="line">System.out.println(s.collect(Collectors.toList())); <span class="comment">// [A, B, C, D, E]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="flatMap"><a href="#flatMap" class="headerlink" title="flatMap"></a>flatMap</h3><p>　　如果<code>Stream</code>的元素是集合</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;List&lt;Integer&gt;&gt; s = Stream.of(</span><br><span class="line">        Arrays.asList(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>),</span><br><span class="line">        Arrays.asList(<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>),</span><br><span class="line">        Arrays.asList(<span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>));</span><br></pre></td></tr></table></figure>
+
+<p>　　而我们希望把<code>Stream</code>转换为<code>Stream&lt;Integer&gt;</code>，就可以使用<code>flatMap()</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;Integer&gt; i = s.flatMap(list -&gt; list.stream());</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://img2022.cnblogs.com/blog/1614317/202202/1614317-20220228120419547-490439981.png"><img src="https://img2022.cnblogs.com/blog/1614317/202202/1614317-20220228120419547-490439981.png" alt="img"></a></p>
+<h3 id="并行"><a href="#并行" class="headerlink" title="并行"></a>并行</h3><p>　　通常情况下，对<code>Stream</code>的元素进行处理是单线程的，即一个一个元素进行处理。但是很多时候，我们希望可以并行处理<code>Stream</code>的元素，因为在元素数量非常大的情况，并行处理可以大大加快处理速度。</p>
+<p>　　一个普通<code>Stream</code>转换为可以并行处理的<code>Stream</code>非常简单，只需要用<code>parallel()</code>进行转换</p>
+<p>　　经过<code>parallel()</code>转换后的<code>Stream</code>只要可能，就会对后续操作进行并行处理。我们不需要编写任何多线程代码就可以享受到并行处理带来的执行效率的提升。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;String&gt; s = ...</span><br><span class="line">String[] result = s.parallel() <span class="comment">// 变成一个可以并行处理的Stream</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="forEach"><a href="#forEach" class="headerlink" title="forEach()"></a>forEach()</h3><p><code>　　forEach()</code>可以循环处理<code>Stream</code>的每个元素，我们经常传入<code>System.out::println</code>来打印<code>Stream</code>的元素</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;String&gt; s = ...</span><br><span class="line">s.forEach(str -&gt; &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;Hello, &quot;</span> + str);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他聚合方法"><a href="#其他聚合方法" class="headerlink" title="其他聚合方法"></a>其他聚合方法</h3><p>　　min求最小值，max求最大值</p>
+<p>　　count求stream的元素个数、</p>
+<p>　　sum对stream所有元素求和</p>
+<p>　　average对stream所有元素求平均值</p>
+<p><code>　　boolean allMatch(Predicate&lt;? super T&gt;)</code>测试是否所有元素均满足测试条件</p>
+<p><code>　　boolean anyMatch(Predicate&lt;? super T&gt;)</code>测试是否至少有一个元素满足测试条件</p>
+<h2 id="八、流的输出"><a href="#八、流的输出" class="headerlink" title="八、流的输出"></a>八、流的输出</h2><p>　　对于流转换操作来说，流的转换不会触发任何的计算，而只有像reduce一样的聚合操作会触发整条流的计算</p>
+<h3 id="输出到集合"><a href="#输出到集合" class="headerlink" title="输出到集合"></a>输出到集合</h3><p>　　以List为例，把<code>Stream</code>的每个元素收集到<code>List</code>的方法是调用<code>collect()</code>并传入<code>Collectors.toList()</code>对象，它实际上是一个<code>Collector</code>实例，通过类似<code>reduce()</code>的操作，把每个元素添加到一个收集器中</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;String&gt; stream = Stream.of(<span class="string">&quot;Apple&quot;</span>,<span class="string">&quot;Pear&quot;</span>,<span class="string">&quot;Orange&quot;</span>);</span><br><span class="line">List&lt;String&gt; list = stream.collect(Collectors.toList());</span><br></pre></td></tr></table></figure>
+
+<p>　　类似的，<code>collect(Collectors.toSet())</code>可以把<code>Stream</code>的每个元素收集到<code>Set</code>中</p>
+<h3 id="输出到数组"><a href="#输出到数组" class="headerlink" title="输出到数组"></a>输出到数组</h3><p>　　把Stream的元素输出为数组和输出为List类似，我们只需要调用<code>toArray()</code>方法，并传入数组的“构造方法”</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = List.of(<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Banana&quot;</span>, <span class="string">&quot;Orange&quot;</span>);</span><br><span class="line">String[] array = list.stream().toArray(String[]::<span class="keyword">new</span>);</span><br></pre></td></tr></table></figure>
+
+<p>　　注意到传入的“构造方法”是<code>String[]::new</code>，它的签名实际上是<code>IntFunction&lt;String[]&gt;</code>定义的<code>String[] apply(int)</code>，即传入<code>int</code>参数，获得<code>String[]</code>数组的返回值</p>
+<h3 id="输出为Map"><a href="#输出为Map" class="headerlink" title="输出为Map"></a>输出为Map</h3><p>　　stream里面的元素是单个的，map需要key和value，所以我们要在输出的时候把元素映射成key和value存入map</p>
+<p>　　这里我们把元素以：为切割点，前面为key，后面为value</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;String&gt; stream = Stream.of(<span class="string">&quot;APPL:Apple&quot;</span>, <span class="string">&quot;MSFT:Microsoft&quot;</span>);</span><br><span class="line">Map&lt;String, String&gt; map = stream</span><br><span class="line">        .collect(Collectors.toMap(</span><br><span class="line">                <span class="comment">// 把元素s映射为key:</span></span><br><span class="line">                s -&gt; s.substring(<span class="number">0</span>, s.indexOf(<span class="string">&#x27;:&#x27;</span>)),</span><br><span class="line">                <span class="comment">// 把元素s映射为value:</span></span><br><span class="line">                s -&gt; s.substring(s.indexOf(<span class="string">&#x27;:&#x27;</span>) + <span class="number">1</span>)));</span><br></pre></td></tr></table></figure>
+
+<h3 id="分组输出"><a href="#分组输出" class="headerlink" title="分组输出"></a>分组输出</h3><p>　　我们可以将stream里的元素按照我们指定的分组规则进行分组，这里我们按照字符串的首字母进行分组，相同的为一组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = List.of(<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Banana&quot;</span>, <span class="string">&quot;Blackberry&quot;</span>, <span class="string">&quot;Coconut&quot;</span>, <span class="string">&quot;Avocado&quot;</span>, <span class="string">&quot;Cherry&quot;</span>, <span class="string">&quot;Apricots&quot;</span>);</span><br><span class="line">Map&lt;String, List&lt;String&gt;&gt; groups = list.stream()</span><br><span class="line">        .collect(Collectors.groupingBy(s -&gt; s.substring(<span class="number">0</span>, <span class="number">1</span>), Collectors.toList()));</span><br></pre></td></tr></table></figure>
+
+<p>　　分组输出使用<code>Collectors.groupingBy()</code>，它需要提供两个函数：一个是分组的key，这里使用<code>s -&gt; s.substring(0, 1)</code>，表示只要首字母相同的<code>String</code>分到一组，第二个是分组的value，这里直接使用<code>Collectors.toList()</code>，表示输出为<code>List</code></p>
+<p>　　假设我们有一个学生类，包含学生姓名、班级和成绩</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span> &#123;</span><br><span class="line">    <span class="type">int</span> gradeId; <span class="comment">// 年级</span></span><br><span class="line">    <span class="type">int</span> classId; <span class="comment">// 班级</span></span><br><span class="line">    String name; <span class="comment">// 名字</span></span><br><span class="line">    <span class="type">int</span> score; <span class="comment">// 分数</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>　　如果现在有一个<code>Stream&lt;Student&gt;</code>，利用分组输出，我们可以很简单地将学生按照年级归类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Stream&lt;Student&gt; studentStream = Stream.of(</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Student</span>(<span class="number">1</span>,<span class="number">1</span>,<span class="string">&quot;xiaoming&quot;</span>,<span class="number">100</span>),</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Student</span>(<span class="number">1</span>,<span class="number">2</span>,<span class="string">&quot;xiaozhang&quot;</span>,<span class="number">99</span>),</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Student</span>(<span class="number">2</span>,<span class="number">1</span>,<span class="string">&quot;xiaoming&quot;</span>,<span class="number">58</span>),</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Student</span>(<span class="number">2</span>,<span class="number">3</span>,<span class="string">&quot;xiaoming&quot;</span>,<span class="number">68</span>)</span><br><span class="line">);</span><br><span class="line"><span class="comment">//按年级分组</span></span><br><span class="line">Map&lt;Integer, List&lt;Student&gt;&gt; groups = </span><br><span class="line">    studentStream.collect(Collectors.groupingBy(s -&gt; s.getGradeId()));</span><br></pre></td></tr></table></figure>
+            </div>
+
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2022/12/13/Java%E5%9F%BA%E7%A1%80/%E6%B3%A8%E8%A7%A3/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2022/12/13/Java%E5%9F%BA%E7%A1%80/Optional/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2020</span> -
+            
+            2022
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">Keep Team</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.5.2</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+        
+    
+</div>
+
+
+
+</body>
+</html>

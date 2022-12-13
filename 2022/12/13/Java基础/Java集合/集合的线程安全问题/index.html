@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Keep Team">
+    
+    <title>
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/fontawesome/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"cn"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066cc","logo":"/images/logo.svg","favicon":"/images/logo.svg","avatar":"/images/avatar.svg","font_size":null,"font_family":null,"hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"header_transparent":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving.","font_color":null,"hitokoto":false},"scroll":{"progress_bar":false,"percent":false}},"local_search":{"enable":false,"preload":false},"code_copy":{},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":false,"version":2}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"enable":false,"wordcount":false,"min2read":false},"img_align":"left","copyright_info":false},"version":"3.5.2"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"};
+  </script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               Keep Theme
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation"></span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">Keep Team</span>
+                            
+                                <span class="author-label">Lv3</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2022-12-13 21:47:28</span>
+        <span class="mobile">2022-12-13 21:47</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2022-10-27 20:53:07</span>
+    </span>
+    
+    
+    
+
+    
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                <h2 id="集合的线程安全问题"><a href="#集合的线程安全问题" class="headerlink" title="集合的线程安全问题"></a>集合的线程安全问题</h2><h2 id="一、List集合的线程安全问题"><a href="#一、List集合的线程安全问题" class="headerlink" title="一、List集合的线程安全问题"></a>一、List集合的线程安全问题</h2><p>ArrayList的add方法不是同步方法，有可能n个线程同时进入，拿到的size是同一个值，那么n个线程同时只添加了一个元素。</p>
+<h3 id="List集合的线程安全问题解决方案"><a href="#List集合的线程安全问题解决方案" class="headerlink" title="List集合的线程安全问题解决方案"></a>List集合的线程安全问题解决方案</h3><ul>
+<li>Vector</li>
+<li>Stack</li>
+<li>CopyOnWriteArrayList</li>
+</ul>
+<h3 id="1、使用List的线程安全子类Vector"><a href="#1、使用List的线程安全子类Vector" class="headerlink" title="1、使用List的线程安全子类Vector"></a>1、使用List的线程安全子类Vector</h3><p>add方法是synchronized修饰的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title function_">addElement</span><span class="params">(E obj)</span> &#123;</span><br><span class="line">    modCount++;</span><br><span class="line">    ensureCapacityHelper(elementCount + <span class="number">1</span>);</span><br><span class="line">    elementData[elementCount++] = obj;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">vector</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">loop</span> <span class="operator">=</span> <span class="number">0</span> ;</span><br><span class="line">    <span class="type">int</span> <span class="variable">threadNum</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line">    <span class="keyword">while</span> (loop &lt; <span class="number">5</span>)&#123;</span><br><span class="line">        <span class="comment">//创建一个计时器</span></span><br><span class="line">        <span class="type">CountDownLatch</span> <span class="variable">latch</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">CountDownLatch</span>(threadNum);</span><br><span class="line">        <span class="comment">//创建集合</span></span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> <span class="title class_">Vector</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; threadNum; i++) &#123;</span><br><span class="line">            <span class="keyword">new</span> <span class="title class_">Thread</span>(()-&gt;&#123;</span><br><span class="line">                <span class="comment">//添加集合内容</span></span><br><span class="line">                list.add(UUID.randomUUID().toString().substring(<span class="number">0</span>,<span class="number">8</span>));</span><br><span class="line">                <span class="comment">//线程操作完成1个减1</span></span><br><span class="line">                latch.countDown();</span><br><span class="line">            &#125;,String.valueOf(i)).start();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//等待所有线程执行完毕</span></span><br><span class="line">        latch.await();</span><br><span class="line">        System.out.println(<span class="string">&quot;集合长度：&quot;</span>+ list.size()+<span class="string">&quot; --- loop =&quot;</span>+ loop);</span><br><span class="line">        System.out.println(list);</span><br><span class="line">        loop++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、使用-Collections-synchronizedList"><a href="#2、使用-Collections-synchronizedList" class="headerlink" title="2、使用 Collections.synchronizedList()"></a>2、使用 Collections.synchronizedList()</h3><p>使用同步方法操作</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; List&lt;T&gt; <span class="title function_">synchronizedList</span><span class="params">(List&lt;T&gt; list)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> (list <span class="keyword">instanceof</span> RandomAccess ?</span><br><span class="line">            <span class="keyword">new</span> <span class="title class_">SynchronizedRandomAccessList</span>&lt;&gt;(list) :</span><br><span class="line">            <span class="keyword">new</span> <span class="title class_">SynchronizedList</span>&lt;&gt;(list));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">collection_synchronizedList</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">loop</span> <span class="operator">=</span> <span class="number">0</span> ;</span><br><span class="line">    <span class="type">int</span> <span class="variable">threadNum</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line">    <span class="keyword">while</span> (loop &lt; <span class="number">5</span>)&#123;</span><br><span class="line">        <span class="comment">//创建一个计时器</span></span><br><span class="line">        <span class="type">CountDownLatch</span> <span class="variable">latch</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">CountDownLatch</span>(threadNum);</span><br><span class="line">        <span class="comment">//创建集合</span></span><br><span class="line">        List&lt;String&gt; list = Collections.synchronizedList(<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;());</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; threadNum; i++) &#123;</span><br><span class="line">            <span class="keyword">new</span> <span class="title class_">Thread</span>(()-&gt;&#123;</span><br><span class="line">                <span class="comment">//添加集合内容</span></span><br><span class="line">                list.add(UUID.randomUUID().toString().substring(<span class="number">0</span>,<span class="number">8</span>));</span><br><span class="line">                <span class="comment">//线程操作完成1个减1</span></span><br><span class="line">                latch.countDown();</span><br><span class="line">            &#125;,String.valueOf(i)).start();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//等待所有线程执行完毕</span></span><br><span class="line">        latch.await();</span><br><span class="line">        System.out.println(<span class="string">&quot;集合长度：&quot;</span>+ list.size()+<span class="string">&quot; --- loop =&quot;</span>+ loop);</span><br><span class="line">        System.out.println(list);</span><br><span class="line">        loop++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3、使用CopyOnWriteArrayList（推荐）"><a href="#3、使用CopyOnWriteArrayList（推荐）" class="headerlink" title="3、使用CopyOnWriteArrayList（推荐）"></a>3、使用CopyOnWriteArrayList（推荐）</h3><p>CopyOnWriteArrayList底层原理参考： <a class="link"   target="_blank" rel="noopener" href="https://www.jianshu.com/p/cd7a73e6bd78" >https://www.jianshu.com/p/cd7a73e6bd78<i class="fas fa-external-link-alt"></i></a></p>
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">copyOnWriteArrayList</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">loop</span> <span class="operator">=</span> <span class="number">0</span> ;</span><br><span class="line">        <span class="type">int</span> <span class="variable">threadNum</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line">        <span class="keyword">while</span> (loop &lt; <span class="number">5</span>)&#123;</span><br><span class="line">            <span class="comment">//创建一个计时器</span></span><br><span class="line">            <span class="type">CountDownLatch</span> <span class="variable">latch</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">CountDownLatch</span>(threadNum);</span><br><span class="line">            <span class="comment">//创建集合</span></span><br><span class="line">            List&lt;String&gt; list = <span class="keyword">new</span> <span class="title class_">CopyOnWriteArrayList</span>&lt;&gt;();</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; threadNum; i++) &#123;</span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">Thread</span>(()-&gt;&#123;</span><br><span class="line">                    <span class="comment">//添加集合内容</span></span><br><span class="line">                    list.add(UUID.randomUUID().toString().substring(<span class="number">0</span>,<span class="number">8</span>));</span><br><span class="line">                    <span class="comment">//线程操作完成1个减1</span></span><br><span class="line">                    latch.countDown();</span><br><span class="line">                &#125;,String.valueOf(i)).start();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//等待所有线程执行完毕</span></span><br><span class="line">            latch.await();</span><br><span class="line">            System.out.println(<span class="string">&quot;集合长度：&quot;</span>+ list.size()+<span class="string">&quot; --- loop =&quot;</span>+ loop);</span><br><span class="line">            System.out.println(list);</span><br><span class="line">            loop++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、Set集合线程安全问题"><a href="#二、Set集合线程安全问题" class="headerlink" title="二、Set集合线程安全问题"></a>二、Set集合线程安全问题</h2><p>使用Set集合时也抛出ConcurrentModificationException(并发修改异常)</p>
+<h3 id="解决方案1-Collections-synchronizedSet-方法"><a href="#解决方案1-Collections-synchronizedSet-方法" class="headerlink" title="解决方案1-Collections. synchronizedSet()方法"></a>解决方案1-Collections. synchronizedSet()方法</h3><p>使用Collections集合工具类的 synchronizedSet()方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">collection_synchronizedSet</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">loop</span> <span class="operator">=</span> <span class="number">0</span> ;</span><br><span class="line">    <span class="type">int</span> <span class="variable">threadNum</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line">    <span class="keyword">while</span> (loop &lt; <span class="number">5</span>)&#123;</span><br><span class="line">        <span class="comment">//创建一个计时器</span></span><br><span class="line">        <span class="type">CountDownLatch</span> <span class="variable">latch</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">CountDownLatch</span>(threadNum);</span><br><span class="line">        <span class="comment">//创建集合</span></span><br><span class="line">        Set&lt;String&gt; set = Collections.synchronizedSet(<span class="keyword">new</span> <span class="title class_">HashSet</span>&lt;&gt;());</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; threadNum; i++) &#123;</span><br><span class="line">            <span class="keyword">new</span> <span class="title class_">Thread</span>(()-&gt;&#123;</span><br><span class="line">                <span class="comment">//添加集合内容</span></span><br><span class="line">                set.add(UUID.randomUUID().toString().substring(<span class="number">0</span>,<span class="number">8</span>));</span><br><span class="line">                <span class="comment">//线程操作完成1个减1</span></span><br><span class="line">                latch.countDown();</span><br><span class="line">            &#125;,String.valueOf(i)).start();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//等待所有线程执行完毕</span></span><br><span class="line">        latch.await();</span><br><span class="line">        System.out.println(<span class="string">&quot;集合长度：&quot;</span>+ set.size()+<span class="string">&quot; --- loop =&quot;</span>+ loop);</span><br><span class="line">        System.out.println(set);</span><br><span class="line">        loop++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="解决方案2-CopyOnWriteArraySet"><a href="#解决方案2-CopyOnWriteArraySet" class="headerlink" title="解决方案2-CopyOnWriteArraySet"></a>解决方案2-CopyOnWriteArraySet</h3><ul>
+<li>使用 CopyOnWriteArraySet(写时复制数组Set集合)</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">CopyOnWriteArraySet</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">loop</span> <span class="operator">=</span> <span class="number">0</span> ;</span><br><span class="line">        <span class="type">int</span> <span class="variable">threadNum</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line">        <span class="keyword">while</span> (loop &lt; <span class="number">5</span>)&#123;</span><br><span class="line">            <span class="comment">//创建一个计时器</span></span><br><span class="line">            <span class="type">CountDownLatch</span> <span class="variable">latch</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">CountDownLatch</span>(threadNum);</span><br><span class="line">            <span class="comment">//创建集合</span></span><br><span class="line">            Set&lt;String&gt; set = <span class="keyword">new</span> <span class="title class_">CopyOnWriteArraySet</span>&lt;&gt;();</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; threadNum; i++) &#123;</span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">Thread</span>(()-&gt;&#123;</span><br><span class="line">                    <span class="comment">//添加集合内容</span></span><br><span class="line">                    set.add(UUID.randomUUID().toString().substring(<span class="number">0</span>,<span class="number">8</span>));</span><br><span class="line">                    <span class="comment">//线程操作完成1个减1</span></span><br><span class="line">                    latch.countDown();</span><br><span class="line">                &#125;,String.valueOf(i)).start();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//等待所有线程执行完毕</span></span><br><span class="line">            latch.await();</span><br><span class="line">            System.out.println(<span class="string">&quot;集合长度：&quot;</span>+ set.size()+<span class="string">&quot; --- loop =&quot;</span>+ loop);</span><br><span class="line">            System.out.println(set);</span><br><span class="line">            loop++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、Map线程安全问题"><a href="#三、Map线程安全问题" class="headerlink" title="三、Map线程安全问题"></a>三、Map线程安全问题</h2><p>原文链接：<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_53975556/article/details/125037750" >https://blog.csdn.net/weixin_53975556/article/details/125037750<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="方式一、使用HashTable"><a href="#方式一、使用HashTable" class="headerlink" title="方式一、使用HashTable"></a>方式一、使用HashTable</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, String&gt; hashtable = <span class="keyword">new</span> <span class="title class_">Hashtable</span>&lt;&gt;();</span><br></pre></td></tr></table></figure>
+
+<p>实现原理是在增删改查的方法上使用了synchronized锁机制，在多线程环境下，无论是读数据还是修改数据，在同一时刻只能有一个线程在执行synchronized方法（所有线程竞争同一把锁），因为对整个表进行锁定。所以线程越多，对该map的竞争越激烈，效率越低。</p>
+<h3 id="方式二、使用Collections-synchronizedMap"><a href="#方式二、使用Collections-synchronizedMap" class="headerlink" title="方式二、使用Collections.synchronizedMap"></a>方式二、使用Collections.synchronizedMap</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, String&gt; synchronizedHashMap =</span><br><span class="line">                Collections.synchronizedMap(<span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String, String&gt;());</span><br></pre></td></tr></table></figure>
+<p> 调用synchronizedMap()方法后会返回一个SynchronizedMap类的对象,而在SynchronizedMap类中使用了synchronized同步关键字来保证对Map的操作是安全的。</p>
+<p>实现原理是使用工具类里的静态方法，把传入的HashTable包装成同步的，即在增删改查的方法上增加了synchronized锁机制，每次操作hashmap都需要先获取到这个对象锁，这个对象锁加了synchronized修饰，其实现方式和HashTable差不多，效率也很低。</p>
+<h3 id="方式三、使用ConcurrentHashMap（推荐）"><a href="#方式三、使用ConcurrentHashMap（推荐）" class="headerlink" title="方式三、使用ConcurrentHashMap（推荐）"></a>方式三、使用ConcurrentHashMap（推荐）</h3><h4 id="ConcurrentHashMap的实现——JDK7版本"><a href="#ConcurrentHashMap的实现——JDK7版本" class="headerlink" title="ConcurrentHashMap的实现——JDK7版本"></a>ConcurrentHashMap的实现——JDK7版本</h4><p>🧸分段锁机制</p>
+<p><img src="https://img-blog.csdnimg.cn/22c34306118f4afeb43d5bedff79cb6a.png" alt="img"></p>
+<p>左边是Hashtable的实现方式——锁整个hash表；右边是ConcurrentHashMap的实现方式——锁桶（或锁段）。</p>
+<p>ConcurrentHashMap在对象中保存了一个Segment数组，即将hash表分成16个桶（默认值），而每个Segent元素即每个桶类似于一个Hashtable，诸如get、put、remove等常用操作只锁当前需要用到的桶。原来Hashtable只能一个线程进入，现在能同时16个进程进入（写进程才需要锁定，而读进程几乎不受限制）。</p>
+<h4 id="ConcurrentHashMap的实现——JDK8版本"><a href="#ConcurrentHashMap的实现——JDK8版本" class="headerlink" title="ConcurrentHashMap的实现——JDK8版本"></a>ConcurrentHashMap的实现——JDK8版本</h4><p>在JDK1.7之前，ConcurrentHashMap是通过分段锁机制来实现的，所以其最大并发度受Segment的个数限制。因此，在JDK1.8中，ConcurrentHashMap的实现原理摒弃了这种设计，而是选择了与HahsMap类似的数组+链表+红黑树的方式实现，而加锁则采用CAS和synchronized实现。</p>
+<p>🧸CAS原理</p>
+<pre><code>       一般地，锁分为悲观锁和乐观锁：
+
+       悲观锁对于同一个数据的并发操作，一定是为发生修改的。
+
+       乐观锁对于同一个数据的并发操作是不会修改的，在更新数据时会采用尝试更新不断重试的方式更新数据。
+</code></pre>
+<p>CAS（Compare And Swap，比较交换）：</p>
+<pre><code>      CAS有三个操作数，内存值V、预期值A、要修改的新值B，当且仅当预期值A 和 内存值V 相等时（A=V）才会将 内存值V修改为 要修改的新值B，否则什么都不做。 
+</code></pre>
+<p>🧸ConcurrentHashMap的初始化</p>
+<p>​        在构造ConcurrentHashMap时，并不会对hash表进行初始化，hash表的初始化是在插入第一个元素时进行的。在put操作时，如果检测到table为空或长度为0时，会调用initTable（）方法对table进行初始化操作。</p>
+
+            </div>
+
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2022/12/13/Java%E5%9F%BA%E7%A1%80/Java%E9%9B%86%E5%90%88/Set%E9%9B%86%E5%90%88/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2022/12/13/Java%E5%9F%BA%E7%A1%80/Java%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E7%9A%84%E6%8E%92%E5%BA%8F/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2020</span> -
+            
+            2022
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">Keep Team</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.5.2</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+        
+    
+</div>
+
+
+
+</body>
+</html>

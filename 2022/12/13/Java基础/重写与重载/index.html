@@ -9,8 +9,6 @@
     
     <title>
         
-            Hello World |
-        
         Keep Theme
     </title>
     
@@ -134,7 +132,7 @@
         <div class="article-content-container">
 
             <div class="article-title">
-                <span class="title-hover-animation">Hello World</span>
+                <span class="title-hover-animation"></span>
             </div>
 
             
@@ -156,13 +154,13 @@
         
             <i class="fa-regular fa-calendar-plus"></i>&nbsp;
         
-        <span class="pc">2022-12-13 20:53:41</span>
-        <span class="mobile">2022-12-13 20:53</span>
+        <span class="pc">2022-12-13 21:47:27</span>
+        <span class="mobile">2022-12-13 21:47</span>
     </span>
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2022-12-13 20:49:02</span>
+        <span class="pc">2022-10-25 20:34:48</span>
     </span>
     
     
@@ -180,19 +178,25 @@
             
 
             <div class="article-content keep-markdown-body">
-                <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>
+                <h2 id="重写与重载"><a href="#重写与重载" class="headerlink" title="重写与重载"></a>重写与重载</h2><p>原文链接：<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/luoro/article/details/118307852" >https://blog.csdn.net/luoro/article/details/118307852<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="一、java中的重载与重写的区别"><a href="#一、java中的重载与重写的区别" class="headerlink" title="一、java中的重载与重写的区别"></a>一、java中的重载与<a class="link"   target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E9%87%8D%E5%86%99&spm=1001.2101.3001.7020" >重写<i class="fas fa-external-link-alt"></i></a>的区别</h2><p>1、重载发生在本类，重写发生在父类与子类之间；</p>
+<p>2、重载的方法名必须相同，重写的方法名相同且返回值类型必须相同；</p>
+<p>3、重载的参数列表不同，重写的参数列表必须相同。</p>
+<h2 id="二、重载（Overload）"><a href="#二、重载（Overload）" class="headerlink" title="二、重载（Overload）"></a>二、重载（Overload）</h2><p>重载发生在本类,方法名相同,参数列表不同,与返回值无关,只和方法名,参数列表,参数的类型有关.</p>
+<p>重载（Overload）:首先是位于一个类之中或者其子类中，具有相同的方法名，但是方法的参数不同，返回值类型可以相同也可以不同。</p>
+<p>（1）：方法名必须相同</p>
+<p>（2）：方法的参数列表一定不一样。</p>
+<p>（3）：访问修饰符和返回值类型可以相同也可以不同。</p>
+<p>其实简单而言：重载就是对于不同的情况写不同的方法。 比如，同一个类中，写不同的构造函数用于初始化不同的参数。</p>
+<h2 id="二、重写（Overriding）"><a href="#二、重写（Overriding）" class="headerlink" title="二、重写（Overriding）"></a>二、重写（Overriding）</h2><p>重写发生在父类子类之间,比如所有类都是继承与Object类的,Object类中本身就有equals, hashcode,toString方法等.在任意子类中定义了重名和同样的参数列表就构成方法重写.</p>
+<p>重写（override）：一般都是表示子类和父类之间的关系，其主要的特征是：方法名相同，参数相同，但是具体的实现不同。</p>
+<p>重写的特征：</p>
+<p>（1）：方法名必须相同，返回值类型必须相同</p>
+<p>（2）：参数列表必须相同</p>
+<p>（3）：访问权限不能比父类中被重写的方法的访问权限更低。例如：如果父类的一个方法被声明为public，那么在子类中重写该方法就不能声明为protected。</p>
+<p>（4）：子类和父类在同一个包中，那么子类可以重写父类所有方法，除了声明为private和final的方法。</p>
+<p>（5）：构造方法不能被重写，</p>
+<p>简单而言：就是具体的实现类对于父类的该方法实现不满意，需要自己在写一个满足于自己要求的方法。</p>
 
             </div>
 
@@ -206,18 +210,33 @@
                         <div class="article-prev">
                             <a class="prev"
                                rel="prev"
-                               href="/2022/12/13/%E6%B5%8B%E8%AF%95Hexo%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/"
+                               href="/2022/12/13/Java%E5%9F%BA%E7%A1%80/Java%E9%9B%86%E5%90%88/Map%E6%98%A0%E5%B0%84/"
                             >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                                 <span class="title flex-center">
-                                <span class="post-nav-title-item">测试Hexo创建文件夹</span>
+                                <span class="post-nav-title-item"></span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                             </a>
                         </div>
                     
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2022/12/13/Java%E5%9F%BA%E7%A1%80/Java%20IO%E6%B5%81/%E8%BE%93%E5%87%BA%E6%B5%81/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
                     
                 </div>
             
